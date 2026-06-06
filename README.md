@@ -41,12 +41,9 @@ Hands-on notebooks for the summer camp. Each notebook opens in **Google Colab** 
 
 ## What you need before you start
 
-1. A Google account (for Colab + Drive).
-2. The shared **camp data folder** link from your instructor → open it → **Add shortcut to Drive** (into *My Drive*).
-
-That's it. Open a notebook above, run the **▶ Step 0** cell, and go.
+Just a **Google account** (for Colab). Open any notebook above with its **Open in Colab** badge, run the **▶ Step 0** cell — it downloads the data automatically — and go. See [COLAB_SETUP.md](COLAB_SETUP.md) for details.
 
 ## For instructors
 
-Notebooks are generated from the camp sources with `summer_camp/tools/build_github.py`. The data file (`synapse_preprocessed.pkl`) is **not** in this repo — it stays on Google Drive and is loaded via the Step 0 cell, so the clinical data link is never published here. Answer keys live separately in the private camp repo.
+Notebooks are generated from the camp sources with `summer_camp/tools/build_github.py`. The data file itself (`synapse_preprocessed.pkl`, ~470 MB) is **not** in this repo — it lives on Google Drive and the Step 0 cell downloads it via `gdown`. Note the Drive link is referenced in the setup cell, so the data is reachable by anyone with this (public) repo; keep that in mind for sensitive data. Answer keys are kept separately and are not part of this repo.
 
